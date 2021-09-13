@@ -11,6 +11,7 @@ git submodule update
 
 set -e 
 cd `dirname $0`
+export BR2_DL_DIR=${HOME}/.br2_dl
 
 if [ ! -e buildroot/.config ]
 then
